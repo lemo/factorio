@@ -2,9 +2,9 @@
   "name": "beneficialcucumber-factorio",
   "version": "0.1.0",
   "author": "beneficialcucumber",
-  "summary": null,
+  "summary": "Module for setting up a Factorio headless server",
   "license": "Apache-2.0",
-  "source": "",
+  "source": "https://github.com/BeneficialCucumber/factorio",
   "project_page": null,
   "issues_url": null,
   "dependencies": [
