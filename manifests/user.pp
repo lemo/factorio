@@ -1,8 +1,8 @@
 class factorio::user {
     user { 'factorio':
+        ensure => present,
         comment => '',
         home => '/home/factorio',
-        ensure => present,
     }
     file { '/home/factorio':
         ensure  => 'directory',

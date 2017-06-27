@@ -14,7 +14,7 @@ class factorio::install {
         unless  => '/bin/test -d /home/factorio/factorio',
         }
     exec { 'factorio_chown':
-        command  => "/bin/chown -R factorio:factorio /home/factorio",
+        command  => '/bin/chown -R factorio:factorio /home/factorio',
         unless   => '/bin/ls -ld /home/factorio/factorio | /bin/grep "factorio factorio"',
         }
     file { '/etc/systemd/system/factorio.service':
@@ -25,7 +25,7 @@ class factorio::install {
         content  => template('factorio/factorio.service.erb')
         }
     exec { 'create_server':
-        command => "/home/factorio/factorio/bin/x64/factorio --create /home/factorio/factorio/saves/world.zip",
+        command => '/home/factorio/factorio/bin/x64/factorio --create /home/factorio/factorio/saves/world.zip',
         unless  => '/bin/test -f /home/factorio/factorio/saves/world.zip',
         }
     exec { 'reload_systemd':
