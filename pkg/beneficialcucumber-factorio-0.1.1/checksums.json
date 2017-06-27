@@ -1,0 +1,14 @@
+{
+  "Gemfile": "6a08ec57f18e97c4ead40a6529d05aa8",
+  "LICENSE": "84dcc94da3adb52b53ae4fa38fe49e5d",
+  "README.md": "2ccf1d4bd36722048a5cd17ca34c409a",
+  "Rakefile": "3044cde52b8cd8508c8400076a66ef11",
+  "manifests/init.pp": "29ecd23c5eedbd39b5268fcf3411fa03",
+  "manifests/install.pp": "49f975a201d866814947d9735a5a5777",
+  "manifests/service.pp": "516fa184cb7ac30bb62c4adf97147d6d",
+  "manifests/user.pp": "93ee75b547564bed675e3d73048b6cc1",
+  "metadata.json": "45113c873ad39a4145ba0c96857546f5",
+  "spec/classes/init_spec.rb": "c4baf4aa2373952dd488a29c32468097",
+  "spec/spec_helper.rb": "0db89c9a486df193c0e40095422e19dc",
+  "templates/factorio.service.erb": "091eb952cda5c766dab39fcdaedce4c0"
+}
