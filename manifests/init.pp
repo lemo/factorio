@@ -42,9 +42,11 @@
 #
 # Copyright 2017 Your name here, unless otherwise noted.
 #
-class factorio {
-
-    include factorio::user
-    include factorio::install
-    include factorio::service
+class factorio (
+  $world_name = 'world1',
+  $factorio_home = '/home/factorio',
+) {
+  include factorio::user
+  include factorio::install
+  include factorio::service
 }

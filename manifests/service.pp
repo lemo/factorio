@@ -1,7 +1,7 @@
 class factorio::service {
-    service { 'factorio_service':
-        ensure  => true,
-        name    => 'factorio',
-        enable  => true,
-        }
+  $world_name = $factorio::world_name
+  service { "factorio@${world_name}":
+    ensure => true,
+    enable => false,
+  }
 }

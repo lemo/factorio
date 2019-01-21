@@ -1,12 +1,13 @@
 class factorio::user {
-    user { 'factorio':
-        ensure => present,
-        comment => '',
-        home => '/home/factorio',
-    }
-    file { '/home/factorio':
-        ensure  => 'directory',
-        owner   => 'factorio',
-        group   => 'factorio',
-        }
+  $factorio_home = $factorio::factorio_home
+  user { 'factorio':
+    ensure  => present,
+    comment => '',
+    home    => $factorio_home,
+  }
+  file { $factorio_home:
+    ensure => 'directory',
+    owner  => 'factorio',
+    group  => 'factorio',
+  }
 }

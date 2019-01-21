@@ -1,0 +1,13 @@
+[Unit]
+Description=Factorio Headless Server
+After=network.target
+
+[Service]
+Type=simple
+User=factorio
+WorkingDirectory=<%= @factorio_home %>
+ExecStart=<%= @factorio_home %>/factorio/bin/x64/factorio --start-server <%= @factorio_home %>/factorio/saves/%i.zip --server-settings <%= @factorio_home %>/factorio/data/server-settings.%i.json
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target
