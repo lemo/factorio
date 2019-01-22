@@ -49,4 +49,5 @@ class factorio (
   include factorio::user
   include factorio::install
   include factorio::service
+  include factorio::updater
 }
